@@ -22,7 +22,8 @@ For more details on the syntax check out the interactive demo:
 > [ui-slider demo and examples](https://ui-slider.firebaseapp.com/)
 
 ## Dependencies
-Leverages the Bower hosted jQuery plugin:
+
+Leverages the NPM hosted jQuery plugin:
 
 > [Bootstrap Slider](https://github.com/seiyria/bootstrap-slider)
 
@@ -30,8 +31,8 @@ Leverages the Bower hosted jQuery plugin:
 
 This may very well work with older version of Ember and Ember-CLI but it was intended for:
 
-- Ember 1.13.7+
-- Ember-CLI 1.13.7+
+- Ember 2.13.3+
+- Ember-CLI 2.13.3+
 
 You can see the CI results at: [Travis Reporting](https://ui-slider.firebaseapp.com/)
 
