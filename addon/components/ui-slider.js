@@ -103,7 +103,7 @@ export default Ember.Component.extend({
   }),
   sectionCalculator() {
     let {sections,min,max,value} = this.getProperties('sections','min','max','value');
-    if(!sections || new A(['null','undefined']).includes(value)) {
+    if(!sections || A(['null','undefined']).includes(value)) {
       return null;
     }
     let section = 1;
@@ -302,7 +302,7 @@ export default Ember.Component.extend({
   },
   setDefaultValue() {
     let {defaultValue,value} = this.getProperties('defaultValue', 'value');
-    if(new A(['null','undefined']).includes(typeOf(value))) {
+    if(A(['null','undefined']).includes(typeOf(value))) {
       defaultValue = typeOf(defaultValue) === 'string' && defaultValue.split(',').length > 1 ? defaultValue.split(',') : defaultValue;
       this.set('value', defaultValue);
     }
